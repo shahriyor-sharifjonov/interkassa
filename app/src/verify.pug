@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        link(href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="styles/index.css")
+    body 
+        include components/header.pug 
+        +header
+        .login 
+            .login__body 
+                .login__top.login__top_col
+                    p.login__title Счёт № XXXXXXX
+                    p.login__subtitle Номер телефона: +7(993)543-67-98
+                form(action="").login__form
+                    input(type="text" placeholder="Код подтверждения").login__input
+                    p.login__label 1:24 до повторного запроса
+                    .login__btns_sm
+                        a(href="payout.html").login__btn_transparent 
+                            img(src="images/left.svg", alt="")
+                            | Вернуться
+                        a(href="#!" anim='ripple').login__btn_sm Подтвердить 
+
+        script(src="scripts/index.js") 

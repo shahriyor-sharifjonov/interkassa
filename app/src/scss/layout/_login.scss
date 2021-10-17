@@ -15,6 +15,11 @@
         width: 100%;
         padding: 40px 50px;
         overflow: hidden;
+
+        @include media(576){
+            padding: 25px;
+        }
+
     }
 
     &__top {
@@ -23,6 +28,14 @@
         align-items: flex-end;
         column-gap: 15px;
         margin-bottom: 45px;
+
+        &_col {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
     }
 
     &__title {
@@ -34,6 +47,33 @@
         @include media(576){
             font-size: 22px;
             line-height: 26px;
+        }
+
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 27.1628px;
+        line-height: 32px;
+        color: #343434;
+
+        @include media(576){
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+    }
+
+    &__label {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 20px;
+        color: rgba(30, 30, 30, 0.47);     
+        margin-top: -20px;   
+
+        @include media(576){
+            font-size: 12px;
+            line-height: 14px;
         }
 
     }
@@ -157,13 +197,32 @@
 
         @include media(576){
             height: 50px;
+            margin: 0 -25px -25px -25px;
+            width: calc(100% + 50px);
         }
 
         &.mt-big {
             margin: 50px -50px -40px -50px;
 
+            @include media(576){
+                margin: 30px -25px -25px -25px;
+            }
+
             .login__btn {
                 width: 100%;
+            }
+
+        }
+
+        &_sm {
+            width: 100%;
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @include media(576){
+             margin-top: 45px; 
             }
 
         }
@@ -189,6 +248,44 @@
         @include media(576){
             font-size: 12px;
             line-height: 13px;
+        }
+
+        &_transparent {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 26px;
+            color: rgba(53, 53, 53, 0.85);
+
+            @include media(576){
+                font-size: 12px;
+                line-height: 120%;
+            }
+
+            img{
+                margin-right: 6px;
+            }
+
+        }
+
+        &_sm {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #1E1E1E;
+            background: #30D755;
+            border-radius: 6px;
+            padding: 10px 30px;
+
+            @include media(576){
+                font-size: 10px;
+                line-height: 1;
+            }
+
         }
 
     }
