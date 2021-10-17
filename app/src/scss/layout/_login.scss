@@ -69,7 +69,11 @@
         font-size: 18px;
         line-height: 20px;
         color: rgba(30, 30, 30, 0.47);     
-        margin-top: -20px;   
+        margin-top: -20px; 
+        
+        &.bold {
+            font-weight: 500;
+        }
 
         @include media(576){
             font-size: 12px;
@@ -154,6 +158,16 @@
             font-size: 12px;
             line-height: 13px;
             padding-bottom: 7px;
+        }
+
+        &.bad {
+            color: #FF4040;
+            border-bottom: 2px solid #FF4040;
+
+            &::placeholder {
+                color: #FF4040;
+            }
+
         }
 
         &::placeholder {
