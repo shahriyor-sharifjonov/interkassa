@@ -8,10 +8,8 @@ html(lang="en")
         link(href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet")
         link(rel="stylesheet" href="styles/index.css")
     body 
-        include components/header.pug 
-        +header
         .login 
-            .login__body 
+            .login__body
                 .login__top.login__top_col
                     p.login__title Счёт № XXXXXXX
                     p.login__subtitle Номер телефона: +7(993)543-67-98
@@ -24,4 +22,4 @@ html(lang="en")
                             | Вернуться
                         a(href="#!" anim='ripple').login__btn_sm Подтвердить 
 
-        script(src="scripts/index.js") 
+        script(src="scripts/index.js")  

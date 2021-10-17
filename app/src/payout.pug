@@ -8,8 +8,6 @@ html(lang="en")
         link(href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet")
         link(rel="stylesheet" href="styles/index.css")
     body 
-        include components/header.pug 
-        +header
         .login
             .login__body.p-0
                 .login__left 
@@ -21,7 +19,7 @@ html(lang="en")
                     p.login__title Услуги  (текст) 
                     p.login__price К оплате: 
                         span 2978  ₽
-                    form(action="").login__form_2
+                    form(action="payout-preloader.html").login__form_2
                         .login__form-item.bad 
                             label(for="cart-num").login__label_2 Номер карты
                             input(type="text" id="cart-num" placeholder="4134 3258 5213 5234").login__input_2 
