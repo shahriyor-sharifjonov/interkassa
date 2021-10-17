@@ -159,6 +159,15 @@
             height: 50px;
         }
 
+        &.mt-big {
+            margin: 50px -50px -40px -50px;
+
+            .login__btn {
+                width: 100%;
+            }
+
+        }
+
     }
 
     &__btn {
