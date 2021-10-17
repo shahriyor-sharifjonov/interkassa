@@ -11,18 +11,6 @@ $sizes: (1320:$xxl,
     540:$sm,
     0:0);
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-
-    &>[class*='col'] {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-}
-
 @each $container-size,
 $break-point in $sizes {
     @if $container-size==0 {

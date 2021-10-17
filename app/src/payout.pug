@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        link(href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="styles/index.css")
+    body 
+        include components/header.pug 
+        +header
+        .login
+            .login__body.p-0
+                .login__left 
+                    .login__top.login__top_col
+                        p.login__title Счёт № XXXXXXX
+                    img(src="images/hand-money.png", alt="")
+                .login__right
+                    p.login__title.df-mob Счёт № XXXXXXX
+                    p.login__title Услуги  (текст) 
+                    p.login__price К оплате: 
+                        span 2978  ₽
+                    form(action="").login__form_2
+                        .login__form-item.bad 
+                            label(for="cart-num").login__label_2 Номер карты
+                            input(type="text" id="cart-num" placeholder="4134 3258 5213 5234").login__input_2 
+                        .login__row 
+                            input(type="text" placeholder="мм" maxlength="2").login__input_2.sm
+                            input(type="text" placeholder="гг" maxlength="2").login__input_2.sm
+                            .login__form-item.row
+                                label(for="ccv").login__label_2.sm Три цифры с обратной стороны карты
+                                input(type="text" placeholder="ccv" id="ccv" maxlength="3").login__input_2.sm
+                        .login__form-item
+                            label(for="name").login__label_2 Полное имя
+                            input(type="text" placeholder="Ivan Ivanov").login__input_2
+                        .login__form-item
+                            label(for="mail").login__label_2 Эл. почта
+                            input(type="text" placeholder="IvanIvanov@example.com" id="mail").login__input_2
+                        p.login__small На эту почту вы получите эл.чек
+                        button(type="submit").login__btn_sm.max Заплатить
+                        p.login__agree Нажимая на кнопку, вы соглашаетесь с <a href="#!">условиями использования сервиса</a>
+        .login__footer 
+            img(src="images/onepay.svg", alt="")
+            p Copyright 2021 ©               
+                        
+
+        script(src="scripts/index.js") 
