@@ -59,3 +59,11 @@ a {
         transform-origin: center;
     }
 }
+
+.linear {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+    max-width: 100%;
+}

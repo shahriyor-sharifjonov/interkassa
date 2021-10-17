@@ -1,0 +1,116 @@
+.intro {
+    position: relative;
+    margin-bottom: 60px;
+    @include media(768){
+        margin-top: 40px;
+    }
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media(768){
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    }
+    &__left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        @include media(768){
+            width: 100%;
+        }
+    }
+    &__right {
+        width: 50%;
+        @include media(768){
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            height: 400px;
+            bottom: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: 0;
+            overflow: hidden;
+        }
+        img{
+            max-width: 100%;
+            @include media(768){
+                max-height: 400px;
+                max-width: 120%;
+            }
+        }
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 140%;
+        color: #F9F9F9;
+        @include media(1200){
+            font-size: 36px;
+        }
+        @include media(992){
+            font-size: 26px;
+        }
+    }
+    &__subtitle {
+        font-weight: 900;
+        font-size: 75px;
+        line-height: 90px;
+        color: #30D755;        
+        margin-bottom: 30px;
+        @include media(1200){
+            font-size: 58px;
+            line-height: 120%;
+        }
+        @include media(992){
+            font-size: 36px;
+        }
+    }
+    &__list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 70px;
+        @include media(768){
+            margin-bottom: 400px;
+        }
+    }
+    &__li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #DAEEDF;
+        img{
+            margin-right: 7px;
+        }
+    }
+    &__btn {
+        background: #30D755;
+        border-radius: 6px;
+        font-weight: 500;
+        width: 250px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 1.20469px;
+        text-transform: uppercase;
+        color: #1E1E1E;
+        @include media(768){
+            align-self: center;
+        }
+    }
+}
