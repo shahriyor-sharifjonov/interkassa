@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        link(href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="styles/index.css")
+    body 
+        include components/header.pug 
+        +header
+        .login 
+            .login__body 
+                .login__top
+                    p.login__title Авторизация
+                    .login__dropdown
+                        button(type='button' onclick="addActive(this)").login__dropdown-btn ru
+                            img(src="images/down.svg", alt="")
+                        .login__dropdown-content 
+                            button(type='button').login__dropdown-item en
+                            button(type='button').login__dropdown-item uk
+                form(action="").login__form
+                    input(type="text" placeholder="Логин").login__input
+                    input(type="password" placeholder="Пароль").login__input
+                    a(href="#!").login__re Забыли пароль?
+                    .login__btns 
+                        a(href="signup.html").login__btn.light Зарегистрироваться
+                        button(type="submit").login__btn Войти
+
+
+        script(src="scripts/index.js") 

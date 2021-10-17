@@ -4,6 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
+    font-family: 'Rubik', sans-serif;
 
     &:focus,
     &:active {
@@ -11,9 +12,22 @@
     }
 }
 
+body {
+    background-color: #1E1E1E;
+    background-image: url('../images/background.png');
+    color: #fff;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
 button {
     font-family: inherit;
     cursor: pointer;
+    background: none;
+    border: none;
 }
 
 input {
