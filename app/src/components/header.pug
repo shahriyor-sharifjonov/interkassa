@@ -1,3 +1,27 @@
 mixin header()
     header.header 
-        p header
+        .header__nav.container 
+            a(href="index.html#!").header__logo
+                img(src="images/onepay.svg", alt="")
+            .header__menu
+                div
+                ul.header__list 
+                    li.header__li 
+                        a(href="#!").header__link Подключение 
+                    li.header__li 
+                        a(href="#!").header__link Тарифы 
+                    li.header__li 
+                        a(href="#!").header__link Контакты 
+                    li.header__li 
+                        a(href="#!").header__link Компания 
+                .header__right 
+                    a(href="signup.html").header__register Регистрация
+                    a(href="login.html").header__login  Вход
+                    .login__dropdown
+                        button(type='button' onclick="addActive(this)").login__dropdown-btn.white ru
+                            img(src="images/down-white.svg", alt="")
+                        .login__dropdown-content 
+                            button(type='button').login__dropdown-item en
+                            button(type='button').login__dropdown-item uk 
+            button.header__button 
+                span.header__button-line 
