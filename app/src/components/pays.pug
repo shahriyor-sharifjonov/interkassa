@@ -1,0 +1,59 @@
+mixin pays()
+    .pays 
+        .pays__body.container 
+            p.pays__title КАКИЕ ПЛАТЕЖИ ВЫ СМОЖЕТЕ ПРИНИМАТЬ
+            .pays__row 
+                .pays__item 
+                    img(src="images/visa.png", alt="")
+                .pays__item 
+                    img(src="images/mastercard.png", alt="")
+                .pays__item 
+                    img(src="images/private.png", alt="")
+                .pays__item 
+                    img(src="images/webmoney.png", alt="")
+                .pays__item 
+                    img(src="images/masterpass.png", alt="")
+            p.pays__p 
+                img(src="images/plus.svg", alt="")
+                | еще 70 видов платежей!
+
+mixin pays2()
+    .pays 
+        .pays__body.container 
+            p.pays__title Нам доверяют
+            .pays__row 
+                .pays__item_big 
+                    img(src="images/cola.png", alt="")
+                .pays__item_big 
+                    img(src="images/adidas.png", alt="")
+                .pays__item_big 
+                    img(src="images/aviasales.png", alt="")
+                .pays__item_big 
+                    img(src="images/transcontainer.png", alt="")
+                .pays__item_big 
+                    img(src="images/ozon.png", alt="")
+                .pays__item_big 
+                    img(src="images/nbc.png", alt="")
+            p.pays__p 
+                img(src="images/plus.svg", alt="")
+                | 659 других компаний!
+    .why.pays 
+        .why__body.container
+            p.pays__title ПОЧЕМУ МЫ
+            .why__content 
+                .why__item
+                    .why__item-image
+                        img(src="images/calendar.png", alt="").why__item-img
+                    p.why__item-p Регулярные платежи (подписка, членство, донаты)
+                .why__item
+                    .why__item-image
+                        img(src="images/box.png", alt="").why__item-img
+                    p.why__item-p Прием платежей через кабинет. Без интеграции с сайтом и (или вообще без сайта)
+                .why__item
+                    .why__item-image
+                        img(src="images/focus.png", alt="").why__item-img
+                    p.why__item-p Тариф от 2% <br>за платежными <br>карточками
+                .why__item
+                    .why__item-image
+                        img(src="images/mob.png", alt="").why__item-img
+                    p.why__item-p Email и SMS уведомления <br>об оплате
