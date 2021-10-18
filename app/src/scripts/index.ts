@@ -22,6 +22,9 @@ window.addEventListener('click', function(e :any) {
             el.classList.remove('active')
         });
     }
+    if(e.target.classList.contains('header__link')) {
+      menuToggle()
+    }
 })
 
 // Header Menu

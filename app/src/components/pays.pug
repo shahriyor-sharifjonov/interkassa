@@ -18,7 +18,7 @@ mixin pays()
                 | еще 70 видов платежей!
 
 mixin pays2()
-    .pays 
+    .pays#company
         .pays__body.container 
             p.pays__title Нам доверяют
             .pays__row 
@@ -37,7 +37,7 @@ mixin pays2()
             p.pays__p 
                 img(src="images/plus.svg", alt="")
                 | 659 других компаний!
-    .why.pays 
+    .why.pays#tarifs 
         .why__body.container
             p.pays__title ПОЧЕМУ МЫ
             .why__content 
